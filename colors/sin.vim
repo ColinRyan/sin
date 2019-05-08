@@ -1,5 +1,5 @@
 "
-" Darcula colorscheme for VIM.
+" Sin colorscheme for VIM.
 "
 
 highlight clear
