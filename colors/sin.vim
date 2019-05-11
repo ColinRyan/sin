@@ -15,7 +15,7 @@ syn match prop /\.\w+/
 syn keyword this this
 
 hi helpOption   ctermfg=red  ctermbg=NONE cterm=NONE guifg=#9a1f00 guibg=NONE gui=NONE
-hi Directory    ctermfg=103  ctermbg=NONE cterm=NONE      
+hi Directory    ctermfg=238  ctermbg=NONE cterm=NONE      
 hi Cursor       ctermfg=darkred  ctermbg=darkred  cterm=bold  guifg=#9a1f00 guibg=NONE gui=bold    
 hi MatchParen   ctermfg=darkred  ctermbg=NONE cterm=underline guifg=#9a1f00 guibg=NONE gui=underline    
 hi StatusLineNC ctermfg=188  ctermbg=235  cterm=NONE  guifg=#3c3c3c guibg=#1e1e1e gui=NONE    
@@ -57,9 +57,9 @@ hi Structure    ctermfg=238 ctermbg=NONE cterm=NONE guifg=#2d2d2d guibg=NONE gui
 hi PreProc      ctermfg=238 ctermbg=NONE cterm=NONE guifg=#2d2d2d guibg=NONE gui=NONE
 hi StorageClass ctermfg=238 ctermbg=NONE cterm=NONE guifg=#2d2d2d guibg=NONE gui=NONE
 hi Underlined   ctermfg=244 ctermbg=NONE cterm=Underline guifg=#3c3c3c guibg=NONE gui=Underline
-hi Identifier   ctermfg=250 ctermbg=NONE cterm=NONE guifg=#3c3c3c guibg=NONE gui=NONE
 hi Normal       ctermfg=244 ctermbg=234  cterm=NONE guifg=#3c3c3c guibg=#111 gui=NONE
 hi Function     ctermfg=244 ctermbg=NONE cterm=bold guifg=#3c3c3c guibg=NONE gui=bold
+hi Identifier   ctermfg=250 ctermbg=NONE cterm=NONE guifg=#3c3c3c guibg=NONE gui=NONE
 hi SpecialKey   ctermfg=256 ctermbg=238  cterm=NONE guifg=#cccccc guibg=NONE gui=bold
 hi Float        ctermfg=256 ctermbg=NONE cterm=bold guifg=#cccccc guibg=NONE gui=bold
 hi Number       ctermfg=256 ctermbg=NONE cterm=bold guifg=#cccccc guibg=NONE gui=bold
@@ -71,7 +71,7 @@ hi DiffDelete   ctermfg=88  ctermbg=NONE cterm=NONE
 hi Todo               ctermfg=001  ctermbg=NONE cterm=bold      guifg=#9a1f00 guibg=NONE gui=bold
 hi cssColor           ctermfg=103  ctermbg=NONE cterm=NONE      
 hi htmlSpecialChar    ctermfg=103  ctermbg=NONE cterm=NONE      
-hi Title              ctermfg=139  ctermbg=NONE cterm=NONE      
+hi Title              ctermfg=244  ctermbg=NONE cterm=bold      
 hi cssClassName       ctermfg=188  ctermbg=NONE cterm=NONE      
 hi cssPseudoClassId   ctermfg=188  ctermbg=NONE cterm=NONE      
 hi htmlArg            ctermfg=238  ctermbg=NONE cterm=NONE      guifg=#2d2d2d guibg=NONE gui=NONE
@@ -201,15 +201,15 @@ hi  jsDestructuringProperty      ctermfg=244 ctermbg=NONE cterm=NONE  guifg=#3c3
 hi  jsVariableDef                ctermfg=244 ctermbg=NONE cterm=NONE  guifg=#3c3c3c guibg=NONE gui=none
 hi  jsModuleKeyword              ctermfg=244 ctermbg=NONE cterm=NONE  guifg=#3c3c3c guibg=NONE gui=none" imports
 
-hi jsFlowReturnFunctionGroup ctermfg=2
-hi jsFlowReturnClassGroup    ctermfg=2
-hi jsFlowReturnMaybe         ctermfg=2
-hi jsFlowReturnKeyword       ctermfg=2
-hi jsFlowReturnArrow         ctermfg=2
-hi jsFlowReturnParents       ctermfg=2
-hi jsFlowReturnArray         ctermfg=2
-hi jsFlowTypeof              ctermfg=2
-hi jsFlowNoise               ctermfg=238 guifg=#2d2d2d guibg=NONE gui=none
+hi jsFlowReturnFunctionGroup ctermfg=8
+hi jsFlowReturnClassGroup    ctermfg=8
+hi jsFlowReturnMaybe         ctermfg=8
+hi jsFlowReturnKeyword       ctermfg=8
+hi jsFlowReturnArrow         ctermfg=8
+hi jsFlowReturnParents       ctermfg=8
+hi jsFlowReturnArray         ctermfg=8
+hi jsFlowTypeof              ctermfg=8
+hi jsFlowNoise               ctermfg=238 guifg=#8d8d8d guibg=NONE gui=none
 hi jsFlowReturn              ctermfg=238 guifg=#2d2d2d guibg=NONE gui=none
 hi jsFlowReturnObject        ctermfg=238 guifg=#2d2d2d guibg=NONE gui=none
 hi jsFlowImportType          ctermfg=238 guifg=#2d2d2d guibg=NONE gui=none
@@ -240,6 +240,10 @@ hi jsonBraces ctermfg=188 ctermbg=234 cterm=NONE
 
 
 hi vimCommentString      ctermfg=124 ctermbg=234  cterm=NONE 
+hi vimEchoHl             ctermfg=238  ctermbg=234  cterm=NONE 
+hi vimSetMod             ctermfg=238  ctermbg=234  cterm=NONE 
+hi vimExecute            ctermfg=238  ctermbg=234  cterm=NONE 
+hi vimSetSep             ctermfg=238  ctermbg=234  cterm=NONE 
 hi vimPatSep             ctermfg=238 ctermbg=234  cterm=NONE  guifg=#2d2d2d guibg=NONE
 hi vim                   ctermfg=238 ctermbg=234  cterm=NONE  guifg=#2d2d2d guibg=NONE
 hi vimLet                ctermfg=238 ctermbg=234  cterm=NONE  guifg=#2d2d2d guibg=NONE
@@ -356,6 +360,7 @@ hi vimFunction           ctermfg=244 ctermbg=NONE cterm=BOLD  guifg=#3c3c3c guib
 hi vimOption             ctermfg=244 ctermbg=NONE cterm=NONE  guifg=#3c3c3c guibg=NONE
 hi vimFuncName           ctermfg=244 ctermbg=NONE cterm=NONE  guifg=#3c3c3c guibg=NONE
 hi vimUserFunc           ctermfg=244 ctermbg=NONE cterm=NONE  guifg=#3c3c3c guibg=NONE
+hi vimHLGroup            ctermfg=244  ctermbg=234  cterm=NONE 
 hi vimHiNmbr             ctermfg=256 ctermbg=234  cterm=bold  guifg=#cccccc guibg=NONE gui=bold
 hi vimHiAttrib           ctermfg=256 ctermbg=234  cterm=bold  guifg=#cccccc guibg=NONE gui=bold
 hi vimHiCtermColor       ctermfg=256 ctermbg=234  cterm=bold  guifg=#cccccc guibg=NONE gui=bold
@@ -366,32 +371,27 @@ hi vimSubstRep4          ctermfg=256 ctermbg=234  cterm=NONE  guifg=#cccccc guib
 hi vimSynRegPat          ctermfg=256 ctermbg=234  cterm=NONE  guifg=#cccccc guibg=NONE
 hi vimUnMap              ctermfg=25  ctermbg=234  cterm=NONE 
 hi vimBehave             ctermfg=25  ctermbg=234  cterm=NONE 
-hi vimEchoHl             ctermfg=25  ctermbg=234  cterm=NONE 
 hi vimInsert             ctermfg=25  ctermbg=234  cterm=NONE 
 hi vimIskSep             ctermfg=25  ctermbg=234  cterm=NONE 
 hi vimSearch             ctermfg=25  ctermbg=234  cterm=NONE 
-hi vimSetMod             ctermfg=25  ctermbg=234  cterm=NONE 
-hi vimSetSep             ctermfg=25  ctermbg=234  cterm=NONE 
 hi vimSubSt1             ctermfg=25  ctermbg=234  cterm=NONE 
 hi vimAddress            ctermfg=25  ctermbg=234  cterm=NONE 
-hi vimExecute            ctermfg=25  ctermbg=234  cterm=NONE 
-hi vimHLGroup            ctermfg=25  ctermbg=234  cterm=NONE 
-hi vimIskList            ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimIskList            ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimMenuMap            ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimMenuMod            ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimMenuRhs            ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimPattern            ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimSyncKey            ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimAuSyntax           ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimCtrlChar           ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimGroupAdd           ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimGroupRem           ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimMenuBand           ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimMenuName           ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimNormCmds           ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimRegister           ctermfg=10  ctermbg=234  cterm=NONE 
-hi vimCollClass          ctermfg=10  ctermbg=234  cterm=NONE 
+hi vimIskList            ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimIskList            ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimMenuMap            ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimMenuMod            ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimMenuRhs            ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimPattern            ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimSyncKey            ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimAuSyntax           ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimCtrlChar           ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimGroupAdd           ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimGroupRem           ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimMenuBand           ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimMenuName           ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimNormCmds           ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimRegister           ctermfg=7  ctermbg=234  cterm=NONE 
+hi vimCollClass          ctermfg=7  ctermbg=234  cterm=NONE 
 
 "  Extra                shell       highlight
 hi shDerefOp            ctermfg=238 ctermbg=234 cterm=NONE  guifg=#2d2d2d guibg=NONE
@@ -446,27 +446,27 @@ hi shTestSingleQuote    ctermfg=256 ctermbg=234 cterm=bold  guifg=#ffffff guibg=
 hi shNumber             ctermfg=256 ctermbg=234 cterm=bold  guifg=#ffffff guibg=NONE gui=bold
 hi shDoubleQuote        ctermfg=256 ctermbg=234 cterm=bold  guifg=#ffffff guibg=NONE gui=bold
 hi shSingleQuote        ctermfg=256 ctermbg=234 cterm=bold  guifg=#ffffff guibg=NONE gui=bold
-hi shDo                 ctermfg=10  ctermbg=234 cterm=NONE 
-hi shIf                 ctermfg=10  ctermbg=234 cterm=NONE 
-hi shOK                 ctermfg=10  ctermbg=234 cterm=NONE 
-hi shComma              ctermfg=10  ctermbg=234 cterm=NONE 
-hi shForPP              ctermfg=10  ctermbg=234 cterm=NONE 
-hi shSubSh              ctermfg=10  ctermbg=234 cterm=NONE 
-hi shAtExpr             ctermfg=10  ctermbg=234 cterm=NONE 
-hi shSource             ctermfg=10  ctermbg=234 cterm=NONE 
-hi shCaseBar            ctermfg=10  ctermbg=234 cterm=NONE 
-hi shCaseBar            ctermfg=10  ctermbg=234 cterm=NONE 
-hi shCtrlSeq            ctermfg=10  ctermbg=234 cterm=NONE 
-hi shCurlyIn            ctermfg=10  ctermbg=234 cterm=NONE 
-hi shDereLen            ctermfg=10  ctermbg=234 cterm=NONE 
-hi shPattern            ctermfg=10  ctermbg=234 cterm=NONE 
-hi shAstQuote           ctermfg=10  ctermbg=234 cterm=NONE 
-hi shDblBrace           ctermfg=10  ctermbg=234 cterm=NONE 
-hi shDblParen           ctermfg=10  ctermbg=234 cterm=NONE 
-hi shAritmetic          ctermfg=10  ctermbg=234 cterm=NONE 
-hi shCaseRange          ctermfg=10  ctermbg=234 cterm=NONE 
-hi shCaseStart          ctermfg=10  ctermbg=234 cterm=NONE 
-hi shCharClass          ctermfg=10  ctermbg=234 cterm=NONE 
+hi shDo                 ctermfg=5  ctermbg=234 cterm=NONE 
+hi shIf                 ctermfg=5  ctermbg=234 cterm=NONE 
+hi shOK                 ctermfg=5  ctermbg=234 cterm=NONE 
+hi shComma              ctermfg=5  ctermbg=234 cterm=NONE 
+hi shForPP              ctermfg=5  ctermbg=234 cterm=NONE 
+hi shSubSh              ctermfg=5  ctermbg=234 cterm=NONE 
+hi shAtExpr             ctermfg=5  ctermbg=234 cterm=NONE 
+hi shSource             ctermfg=5  ctermbg=234 cterm=NONE 
+hi shCaseBar            ctermfg=5  ctermbg=234 cterm=NONE 
+hi shCaseBar            ctermfg=5  ctermbg=234 cterm=NONE 
+hi shCtrlSeq            ctermfg=5  ctermbg=234 cterm=NONE 
+hi shCurlyIn            ctermfg=5  ctermbg=234 cterm=NONE 
+hi shDereLen            ctermfg=5  ctermbg=234 cterm=NONE 
+hi shPattern            ctermfg=5  ctermbg=234 cterm=NONE 
+hi shAstQuote           ctermfg=5  ctermbg=234 cterm=NONE 
+hi shDblBrace           ctermfg=5  ctermbg=234 cterm=NONE 
+hi shDblParen           ctermfg=5  ctermbg=234 cterm=NONE 
+hi shAritmetic          ctermfg=5  ctermbg=234 cterm=NONE 
+hi shCaseRange          ctermfg=5  ctermbg=234 cterm=NONE 
+hi shCaseStart          ctermfg=5  ctermbg=234 cterm=NONE 
+hi shCharClass          ctermfg=5  ctermbg=234 cterm=NONE 
 hi shEchoQuote          ctermfg=25  ctermbg=234 cterm=NONE 
 hi shSetOption          ctermfg=25  ctermbg=234 cterm=NONE 
 hi shDrefSimple         ctermfg=25  ctermbg=234 cterm=NONE 
@@ -551,6 +551,18 @@ hi clear      SpellBad
 hi clear      SpellCap
 hi clear      SpellLocal
 hi clear      SpellRare
+
+
+" Highlighting {{{1
+" Highlighting: Setup some nice colours to show the mark positions.
+hi MarkologyHLl ctermfg=238 ctermbg=235 cterm=none guifg=#9a1f00 guibg=black
+hi MarkologyHLLine cterm=underline gui=undercurl guisp=#007777
+hi MarkologyHLu ctermfg=238 ctermbg=235 cterm=none guifg=#9a1f00 guibg=black
+hi MarkologyHLo ctermfg=238 ctermbg=235 cterm=none guifg=#9a1f00 guibg=black
+hi MarkologyHLm ctermfg=238 ctermbg=235 cterm=none guifg=#9a1f00 guibg=black
+" }}}1
+
+
 
 " NonText are 'end of the window' symbols, showbreak and various others. See :he highlight-groups
 hi NonText ctermfg=244 ctermbg=NONE cterm=NONE  guifg=#1e1e1e guibg=NONE gui=none
