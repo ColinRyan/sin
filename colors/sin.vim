@@ -97,6 +97,17 @@ let g:gitgutter_override_sign_column_highlight = 0 " Tell git gutter to leave th
 hi SignColumn ctermfg=60 ctermbg=235 cterm=NONE guifg=NONE guibg=#1e1e1e gui=NONE    
 hi LineNr ctermfg=60 ctermbg=235 cterm=NONE guifg=NONE guibg=#1e1e1e gui=NONE    
 
+
+" EasyMotion
+hi EasyMotionTarget ctermbg=none ctermfg=124
+hi EasyMotionShade  ctermbg=none ctermfg=240
+
+hi EasyMotionTarget2First ctermbg=none ctermfg=124
+hi EasyMotionTarget2Second ctermbg=none ctermfg=124
+
+hi EasyMotionMoveHL ctermbg=white ctermfg=black
+hi EasyMotionIncSearch ctermbg=white ctermfg=black
+
 " Extra js highlighting.
 "
 
@@ -394,6 +405,7 @@ hi vimRegister           ctermfg=7  ctermbg=234  cterm=NONE
 hi vimCollClass          ctermfg=7  ctermbg=234  cterm=NONE 
 
 "  Extra                shell       highlight
+hi shSetOption          ctermfg=238  ctermbg=234 cterm=NONE 
 hi shDerefOp            ctermfg=238 ctermbg=234 cterm=NONE  guifg=#2d2d2d guibg=NONE
 hi shParen              ctermfg=238 ctermbg=234 cterm=NONE  guifg=#2d2d2d guibg=NONE
 hi shRedir              ctermfg=238 ctermbg=234 cterm=NONE  guifg=#2d2d2d guibg=NONE
@@ -431,6 +443,7 @@ hi shExSingleQuote      ctermfg=244 ctermbg=234 cterm=NONE  guifg=#3c3c3c guibg=
 hi shCommandSub         ctermfg=244 ctermbg=234 cterm=bold  guifg=#3c3c3c guibg=NONE gui=bold
 hi shDerefSimple        ctermfg=244 ctermbg=234 cterm=bold  guifg=#3c3c3c guibg=NONE gui=bold
 hi shCmdParenRegion     ctermfg=244 ctermbg=234 cterm=bold  guifg=#3c3c3c guibg=NONE gui=bold
+hi shDerefSpecial       ctermfg=244  ctermbg=234 cterm=bold 
 hi shCase               ctermfg=256 ctermbg=234 cterm=NONE  guifg=#ffffff guibg=NONE
 hi shExpr               ctermfg=256 ctermbg=234 cterm=NONE  guifg=#ffffff guibg=NONE
 hi shTest               ctermfg=256 ctermbg=234 cterm=NONE  guifg=#ffffff guibg=NONE
@@ -468,7 +481,6 @@ hi shCaseRange          ctermfg=5  ctermbg=234 cterm=NONE
 hi shCaseStart          ctermfg=5  ctermbg=234 cterm=NONE 
 hi shCharClass          ctermfg=5  ctermbg=234 cterm=NONE 
 hi shEchoQuote          ctermfg=25  ctermbg=234 cterm=NONE 
-hi shSetOption          ctermfg=25  ctermbg=234 cterm=NONE 
 hi shDrefSimple         ctermfg=25  ctermbg=234 cterm=NONE 
 hi shHereString         ctermfg=25  ctermbg=234 cterm=NONE 
 hi shSkipInitWS         ctermfg=25  ctermbg=234 cterm=NONE 
@@ -479,7 +491,6 @@ hi shFunctionTwo        ctermfg=25  ctermbg=234 cterm=NONE
 hi shTestPattern        ctermfg=25  ctermbg=234 cterm=NONE 
 hi shDerefPattern       ctermfg=25  ctermbg=234 cterm=NONE 
 hi shDerefPPSleft       ctermfg=25  ctermbg=234 cterm=NONE 
-hi shDerefSpecial       ctermfg=25  ctermbg=234 cterm=NONE 
 hi shEmbeddedEcho       ctermfg=25  ctermbg=234 cterm=NONE 
 hi shFunctionFour       ctermfg=25  ctermbg=234 cterm=NONE 
 hi shDerefPSRright      ctermfg=25  ctermbg=234 cterm=NONE 
